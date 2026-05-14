@@ -1,17 +1,17 @@
+# tests/test_calculator.py
+
 import pytest
-from app.calculator import add, divide, sub
-
-# calculator.py
-
-def add(a: float, b: float) -> float:
-    return a + b
+from app.calculator import add, divide
 
 
-def divide(a: float, b: float) -> float:
-    if b == 0:
-        raise ValueError("b must not be 0")
-    return a / b
+def test_add():
+    assert add(2, 3) == 5
 
 
-def subtract(a: float, b: float) -> float:
-    return a - b
+def test_divide():
+    assert divide(10, 2) == 5
+
+
+def test_divide_by_zero():
+    with pytest.raises(ValueError):
+        divide(10, 0)
