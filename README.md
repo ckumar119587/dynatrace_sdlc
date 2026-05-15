@@ -10,3 +10,6 @@ Events generated:
 This file is used for dev/featureX roll-outs..
 
 Add a trivial change to dynatrace_sdlc/README.md
+
+Created and Maintain by:
+Chandan Kumar
