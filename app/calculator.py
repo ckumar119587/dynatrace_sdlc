@@ -5,8 +5,3 @@ def divide(a: float, b: float) -> float:
     if b == 0:
         raise ValueError("b must not be 0")
     return a / b
-
-def multiply(a: float, b: float) -> float:
-    if b == 0:
-        raise ValueError("b must not be 0")
-    return a / b
