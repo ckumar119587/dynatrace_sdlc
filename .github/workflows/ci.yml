@@ -47,7 +47,7 @@ jobs:
 
       - name: Run tests
         env:
-          PYTHONPATH: ${{ github.workspace }} # comment this line & 1 above to introduce an ERROR to CI pipeline (on purpose)
+          #PYTHONPATH: ${{ github.workspace }} # comment this line & 1 above to introduce an ERROR to CI pipeline (on purpose)
         run: |
           pytest -q
 
